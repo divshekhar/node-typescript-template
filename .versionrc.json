@@ -1,0 +1,16 @@
+{
+  "types": [
+    { "type": "fix", "section": "Bug Fixes" },
+    { "type": "feat", "section": "Features" },
+    { "type": "chore", "section": "Chore", "hidden": false },
+    { "type": "test", "section": "Refactor", "hidden": false },
+    { "type": "build", "section": "Build", "hidden": false },
+    { "type": "refactor", "section": "Refactor", "hidden": false },
+    { "type": "style", "section": "Refactor", "hidden": false },
+    { "type": "docs", "section": "Docs", "hidden": false },
+    { "type": "perf", "section": "Perf", "hidden": false },
+    { "type": "ci", "section": "CI", "hidden": false },
+    { "type": "revert", "section": "Revert", "hidden": false },
+    { "type": "wip", "section": "WIP", "hidden": false }
+  ]
+}
