@@ -2,13 +2,12 @@
 
 import express, { Request, Response } from 'express';
 import 'dotenv/config';
-import { Config } from './config';
 
 import { resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 const app = express();
-const PORT = Config.port;
+const PORT = parseInt(process.env.PORT || '8080');
 
 app.get('/', (_: Request, res: Response) => {
   res.statusCode = 200;
@@ -27,7 +26,7 @@ const isCLI = nodePath === modulePath;
 if (isCLI) {
   app.listen(PORT, () => {
     // eslint-disable-next-line no-console
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running on port http://localhost:${PORT}`);
   });
 }
 
